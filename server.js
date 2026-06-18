@@ -49,7 +49,7 @@ function serveStatic(req, res) {
   });
 }
 
-const server = http.createServer((req, res) => {
+function handler(req, res) {
   const url = req.url.split("?")[0];
 
   if (url === "/api/round") {
@@ -71,7 +71,9 @@ const server = http.createServer((req, res) => {
   }
 
   return serveStatic(req, res);
-});
+}
+
+const server = http.createServer(handler);
 
 // Find non-internal IPv4 addresses (your LAN IPs) so phones can connect.
 function getLanIPs() {
@@ -85,18 +87,24 @@ function getLanIPs() {
   return out;
 }
 
-server.listen(PORT, "0.0.0.0", () => {
-  const meta = getMeta();
-  const ips = getLanIPs();
-  console.log("\n  🎮  Trivia is live!\n");
-  console.log(`     On this Mac:   http://localhost:${PORT}`);
-  if (ips.length) {
-    console.log("     On your phone (same Wi-Fi):");
-    ips.forEach((ip) => console.log(`        http://${ip}:${PORT}`));
-  } else {
-    console.log("     (No LAN IP detected — check your Wi-Fi connection.)");
-  }
-  console.log(
-    `\n     ${meta.total} questions across ${meta.themes.length} themes. Press Ctrl+C to stop.\n`
-  );
-});
+// Only start listening when run directly (`node server.js`). When imported by
+// tests, just export the handler/server so they can drive it on their own port.
+if (require.main === module) {
+  server.listen(PORT, "0.0.0.0", () => {
+    const meta = getMeta();
+    const ips = getLanIPs();
+    console.log("\n  🎮  Trivia is live!\n");
+    console.log(`     On this Mac:   http://localhost:${PORT}`);
+    if (ips.length) {
+      console.log("     On your phone (same Wi-Fi):");
+      ips.forEach((ip) => console.log(`        http://${ip}:${PORT}`));
+    } else {
+      console.log("     (No LAN IP detected — check your Wi-Fi connection.)");
+    }
+    console.log(
+      `\n     ${meta.total} questions across ${meta.themes.length} themes. Press Ctrl+C to stop.\n`
+    );
+  });
+}
+
+module.exports = { server, handler };
