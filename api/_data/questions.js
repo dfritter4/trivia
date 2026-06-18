@@ -410,6 +410,222 @@ const QUESTIONS = [
     answer: 0,
   },
 
+  // ---------- more TV ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "TV",
+    difficulty: "easy",
+    q: "Who lives in a pineapple under the sea?",
+    choices: ["Patrick Star", "SpongeBob SquarePants", "Squidward", "Mr. Krabs"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "TV",
+    difficulty: "medium",
+    q: "The Powerpuff Girls were created by which scientist?",
+    choices: ["Dr. Brainstorm", "Professor Utonium", "Dexter", "Professor Membrane"],
+    answer: 1,
+    fact: "Made of sugar, spice, everything nice — and a dash of Chemical X.",
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "TV",
+    difficulty: "hard",
+    q: "Arnold's distinctive head on Hey Arnold! is most often compared to what?",
+    choices: ["A football", "An egg", "A square", "A lightbulb"],
+    answer: 0,
+  },
+
+  // ---------- more MUSIC ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "Music",
+    difficulty: "easy",
+    q: "\"Bye Bye Bye\" was a 2000 hit by which boy band?",
+    choices: ["Backstreet Boys", "*NSYNC", "98 Degrees", "O-Town"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Music",
+    difficulty: "medium",
+    q: "\"In Da Club\" was a 2003 breakout hit by which rapper?",
+    choices: ["Ja Rule", "50 Cent", "Nelly", "Ludacris"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Music",
+    difficulty: "medium",
+    q: "Which pop-punk band released \"All the Small Things\" in 1999?",
+    choices: ["Sum 41", "Blink-182", "Green Day", "Good Charlotte"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Music",
+    difficulty: "hard",
+    q: "What was Lady Gaga's 2008 debut single?",
+    choices: ["Poker Face", "Just Dance", "Bad Romance", "Paparazzi"],
+    answer: 1,
+  },
+
+  // ---------- more MOVIES ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "Movies",
+    difficulty: "easy",
+    q: "In Toy Story, what is the name of the cowboy doll?",
+    choices: ["Buzz", "Woody", "Rex", "Hamm"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Movies",
+    difficulty: "easy",
+    q: "In the Shrek movies, what kind of creature is Shrek?",
+    choices: ["A troll", "An ogre", "A giant", "A goblin"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Movies",
+    difficulty: "medium",
+    q: "In Harry Potter, which platform do students use to board the Hogwarts Express?",
+    choices: ["Platform 9¾", "Platform 7½", "Platform 11", "Platform 13"],
+    answer: 0,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Movies",
+    difficulty: "medium",
+    q: "In Cast Away (2000), what does Tom Hanks's character name his volleyball companion?",
+    choices: ["Wilson", "Spalding", "Buddy", "Coconut"],
+    answer: 0,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Movies",
+    difficulty: "hard",
+    q: "What is the name of the high school the Plastics attend in Mean Girls?",
+    choices: ["North Shore High", "Bayside High", "East Great Falls High", "Ridgemont High"],
+    answer: 0,
+  },
+
+  // ---------- more INTERNET / TECH ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "Internet",
+    difficulty: "easy",
+    q: "What does the abbreviation \"LOL\" stand for?",
+    choices: ["Lots of Love", "Laugh Out Loud", "Land of Legends", "Look Out Loud"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Internet",
+    difficulty: "medium",
+    q: "Which video-sharing site did Google acquire in 2006?",
+    choices: ["Vimeo", "YouTube", "Metacafe", "Dailymotion"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Internet",
+    difficulty: "hard",
+    q: "Which early search engine had a butler mascot named Jeeves?",
+    choices: ["Ask Jeeves", "AltaVista", "Lycos", "Excite"],
+    answer: 0,
+  },
+
+  // ---------- more VIDEO GAMES ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "Games",
+    difficulty: "easy",
+    q: "Which blue hedgehog is Sega's mascot?",
+    choices: ["Sonic", "Crash", "Spyro", "Knuckles"],
+    answer: 0,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Games",
+    difficulty: "medium",
+    q: "Which block-building game was created by Markus \"Notch\" Persson and released in 2011?",
+    choices: ["Terraria", "Minecraft", "Roblox", "Lego Worlds"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Games",
+    difficulty: "medium",
+    q: "In Mario Kart, which item homes in on whoever is in first place?",
+    choices: ["Red shell", "Blue (spiny) shell", "Banana", "Super Star"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Games",
+    difficulty: "hard",
+    q: "Which two directional inputs begin the famous \"Konami Code\"?",
+    choices: ["Up, Up", "Left, Right", "Down, Down", "B, A"],
+    answer: 0,
+    fact: "The full code: Up, Up, Down, Down, Left, Right, Left, Right, B, A.",
+  },
+
+  // ---------- more BRANDS / TOYS ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "Brands",
+    difficulty: "easy",
+    q: "Crocs are a brand of what?",
+    choices: ["Sunglasses", "Foam clogs", "Backpacks", "Watches"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Brands",
+    difficulty: "medium",
+    q: "Which collectible cardboard discs did kids slam in a '90s playground game?",
+    choices: ["Pogs", "Marbles", "Jacks", "Dominoes"],
+    answer: 0,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Brands",
+    difficulty: "hard",
+    q: "Beanie Babies were made by which company?",
+    choices: ["Hasbro", "Ty", "Mattel", "Fisher-Price"],
+    answer: 1,
+  },
+
+  // ---------- more CULTURE ----------
+  {
+    theme: "Millennial Nostalgia",
+    category: "Culture",
+    difficulty: "easy",
+    q: "\"Got Milk?\" was a long-running ad campaign for what?",
+    choices: ["Cereal", "Milk", "Cookies", "Yogurt"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Culture",
+    difficulty: "hard",
+    q: "On the early-2000s website \"Hot or ___,\" users rated strangers' photos. Fill in the blank.",
+    choices: ["Cold", "Not", "Cool", "No"],
+    answer: 1,
+  },
+  {
+    theme: "Millennial Nostalgia",
+    category: "Culture",
+    difficulty: "hard",
+    q: "The yellow rubber \"Livestrong\" wristband raised awareness for which cause?",
+    choices: ["Cancer research", "Heart disease", "Autism", "Diabetes"],
+    answer: 0,
+  },
+
   // =====================================================================
   // ============================ THEME: MARVEL ==========================
   // =====================================================================
