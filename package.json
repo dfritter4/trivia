@@ -1,0 +1,14 @@
+{
+  "name": "trivia",
+  "version": "0.2.0",
+  "description": "A quick, mobile-first trivia game with selectable themes and difficulty. Zero dependencies.",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

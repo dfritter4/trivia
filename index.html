@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1033" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Totally Rad Trivia 💾</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💾</text></svg>" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <main id="app">
+    <!-- ===== START SCREEN ===== -->
+    <section id="screen-start" class="screen active">
+      <div class="logo">
+        <span class="logo-emoji">💾</span>
+        <h1 class="title">Totally Rad<br /><span class="title-accent">TRIVIA</span></h1>
+        <p class="subtitle">A nostalgia gauntlet for millennials</p>
+      </div>
+
+      <div class="card">
+        <label class="field-label">Pick a theme</label>
+        <div class="theme-picker" id="theme-picker">
+          <button class="count-btn theme-btn" disabled>Loading themes…</button>
+        </div>
+
+        <label class="field-label">Difficulty</label>
+        <div class="count-picker" id="difficulty-picker">
+          <button class="count-btn" data-difficulty="easy">Easy</button>
+          <button class="count-btn" data-difficulty="medium">Medium</button>
+          <button class="count-btn" data-difficulty="hard">Hard</button>
+          <button class="count-btn active" data-difficulty="any">Any</button>
+        </div>
+
+        <label class="field-label">How many questions?</label>
+        <div class="count-picker" id="count-picker">
+          <button class="count-btn" data-count="5">5</button>
+          <button class="count-btn active" data-count="10">10</button>
+          <button class="count-btn" data-count="15">15</button>
+          <button class="count-btn" data-count="20">20</button>
+        </div>
+
+        <label class="field-label">Seconds per question</label>
+        <div class="count-picker" id="timer-picker">
+          <button class="count-btn" data-time="0">∞</button>
+          <button class="count-btn" data-time="10">10</button>
+          <button class="count-btn active" data-time="15">15</button>
+          <button class="count-btn" data-time="20">20</button>
+        </div>
+      </div>
+
+      <button id="btn-start" class="btn btn-primary">START GAME ▶</button>
+      <p class="hint">Tip: open this page on everyone's phone and compare scores!</p>
+    </section>
+
+    <!-- ===== QUIZ SCREEN ===== -->
+    <section id="screen-quiz" class="screen">
+      <header class="hud">
+        <div class="hud-item">
+          <span class="hud-label">Q</span>
+          <span id="q-progress">1/10</span>
+        </div>
+        <div class="hud-item hud-score">
+          <span class="hud-label">SCORE</span>
+          <span id="score">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">🔥</span>
+          <span id="streak">0</span>
+        </div>
+      </header>
+
+      <div class="timer-bar-wrap"><div id="timer-bar" class="timer-bar"></div></div>
+
+      <div class="quiz-body">
+        <span id="category-tag" class="category-tag">TV</span>
+        <h2 id="question" class="question">Loading…</h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="feedback" class="feedback">
+        <p id="feedback-text" class="feedback-text"></p>
+        <p id="fact-text" class="fact-text"></p>
+        <button id="btn-next" class="btn btn-primary">NEXT ▶</button>
+      </div>
+    </section>
+
+    <!-- ===== RESULTS SCREEN ===== -->
+    <section id="screen-results" class="screen">
+      <div class="logo">
+        <span id="result-emoji" class="logo-emoji">🏆</span>
+        <h1 class="title" id="result-rank">Rad!</h1>
+      </div>
+      <div class="card results-card">
+        <div class="result-score" id="result-score">0 / 10</div>
+        <div class="result-pct" id="result-pct">0%</div>
+        <p class="result-blurb" id="result-blurb"></p>
+        <div class="result-stats">
+          <div><span id="best-streak">0</span><small>BEST STREAK</small></div>
+          <div><span id="result-points">0</span><small>POINTS</small></div>
+        </div>
+      </div>
+      <button id="btn-again" class="btn btn-primary">PLAY AGAIN ↺</button>
+      <button id="btn-home" class="btn btn-ghost">HOME</button>
+    </section>
+  </main>
+
+  <script src="/game.js"></script>
+</body>
+</html>
